@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/our_background"
+    android:layout_weight="10">
+
+    <TextView
+        android:id="@+id/textloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/loc_label"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_light"
+        android:text="@string/set_label"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:layout_below="@+id/textloc"
+        android:id="@+id/locations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:minWidth="150sp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:layout_below="@+id/textset"
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:entries="@array/settings"
+        android:minWidth="150sp"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textpers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_weight="6"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="center"
+        android:text="@string/persons_label"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/persons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/ubuntu"
+        android:hint="@string/persons_hint"
+        android:importantForAutofill="no"
+        android:inputType="text|textAutoComplete"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_weight="6"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="center"
+        android:text="@string/objects_label"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/objects"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/ubuntu"
+        android:hint="@string/objects_hint"
+        android:importantForAutofill="no"
+        android:inputType="text|textAutoComplete"
+        android:minHeight="48dp"
+        android:scrollHorizontally="false"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/grey"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:layout_below="@+id/objects"
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:contentDescription="@string/Generate_button"
+        android:fontFamily="@font/ubuntu_bold"
+        android:maxHeight="48dp"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textColor="#7E57C2"
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideInset">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_italic"
+            android:padding="10dp"
+            android:text="@string/defaultExample"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </ScrollView>
+
+</RelativeLayout>
+

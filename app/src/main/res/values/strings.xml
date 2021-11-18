@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Генератор сценариев</string>
+
+    <string name="loc_label">Локация</string>
+    <string name="set_label">Сеттинг</string>
+
+    <string name="persons_label">Имена\nнеигровых\nперсонажей</string>
+    <string name="objects_label">Ключевой\nобьект</string>
+
+    <string name="persons_hint">Артур, лефтарион…</string>
+    <string name="objects_hint">Кольцо всевластия…</string>
+
+    <string name="Generate_button">Сгенерировать</string>
+    <string name="description">Описание</string>
+
+    <string name="clipboardNotify">Текст скопирован в буфер обмена</string>
+    <string name="defaultExample">
+        Это приложение = генератор описаний для различных локаций настольных и не только игр, с возможностью выбора
+        сэттинга этой локации, и ее вида из выпадающего списка.\n
+        Так же в описание вы можете включить имена ваших персонажей(до двух штук, указанных через запятую. Первое имя будет дано главному персонажу сюжета,
+        второе второстепенному)\n\n
+
+
+    </string>
+
+    <string-array name="settings">
+        <item>Фэнтези</item>
+        <item>Киберпанк</item>
+        <item>Постапокалипсис</item>
+    </string-array>
+</resources>
