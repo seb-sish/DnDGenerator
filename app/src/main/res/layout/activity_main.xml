@@ -179,9 +179,9 @@
             android:fontFamily="@font/pixels"
             android:padding="10dp"
             android:text="@string/defaultExample"
-            android:textSize="16sp"
             android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
     </ScrollView>
 
 </RelativeLayout>

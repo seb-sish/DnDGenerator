@@ -66,10 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 Random numberGenerator = new Random();
 
                 String mainPersName, additPersName = "Карл", itemName;
-                String description = "";
-                String mainPers = "";
-                String item = "";
-                String additPers = "";
+                String description = "", mainPers = "", item = "", additPers = "";
 
                 switch (settingsSpinner.getSelectedItem().toString()){
                     case "Фэнтези":
@@ -103,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                     else additPersName = personsNames[1].replaceFirst(" ", "");
                 } catch (java.lang.ArrayIndexOutOfBoundsException ignored){}
 
+                description = description.replace("[артефакт]", itemName).replace("[гл имя]", mainPersName).replace("[доп имя]", additPersName);
                 mainPers = mainPers.replace("[артефакт]", itemName).replace("[гл имя]", mainPersName).replace("[доп имя]", additPersName);
                 item = item.replace("[артефакт]", itemName).replace("[гл имя]", mainPersName).replace("[доп имя]", additPersName);
                 additPers = additPers.replace("[артефакт]", itemName).replace("[гл имя]", mainPersName).replace("[доп имя]", additPersName);
